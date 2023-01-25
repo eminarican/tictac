@@ -66,8 +66,6 @@ void preparing() {
             board_state_set(Ingame);
             break;
         case 27:
-            window_clear();
-            window_color(White);
             exit(0);
     }
 }
@@ -131,6 +129,4 @@ void ended() {
     }
 
     window_char();
-    window_clear();
-    window_color(White);
 }
