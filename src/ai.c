@@ -22,8 +22,6 @@ void ai_play(char cells[4][4]) {
         }
     }
 
-    printf("player at a: %c\n", cells[row][col]);
-    printf("row: %i, col: %i\n", row, col);
     board_play(row, col);
 }
 
