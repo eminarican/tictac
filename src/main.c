@@ -73,10 +73,10 @@ void preparing() {
 void ingame() {
     window_write(22, 6, "X O X");
 
-    if (!board_ai()) {
-        window_write(11, 8, "Player 1 (X) - Player 2 (O)");
-    } else {
+    if (board_ai()) {
         window_write(11, 8, "Player 1 (X) - Computer (O)");
+    } else {
+        window_write(11, 8, "Player 1 (X) - Player 2 (O)");
     }
 
     board_render();

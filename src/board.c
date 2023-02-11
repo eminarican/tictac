@@ -48,10 +48,10 @@ enum Player board_player() {
 
 void board_player_switch() {
     player = board_player() == FirstPlayer ?
-             (board_ai() ?
-              ComputerPlayer :
-              SecondPlayer
-             ) : FirstPlayer;
+            (board_ai() ?
+                ComputerPlayer :
+                SecondPlayer
+            ) : FirstPlayer;
 }
 
 void board_player_set(enum Player new) {
